@@ -9,7 +9,7 @@ Run container, which contains simulavr and necessary environment:
 `docker compose -f docker-compose.yml -p simulavr up -d`
 
 Login into container:  
-`docker compose exec simulavr /bin/bash`
+`docker compose -p simulavr exec simulavr /bin/bash`
 
 After you finished your work with container use this command to shut down it:  
 `docker compose -f docker-compose.yml -p simulavr down`  
